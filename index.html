@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!--Bootstrap jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <title>MARCA Mexico - Diario online lider en informacion deportiva</title>
+  <link rel="icon" sizes="32x32" href="https://www.marca.com/mx/favicon_32x32.png" />
+
+  <style>
+    .titulos {
+      color: #c00c00;
+      display: inline;
+      font-family: Barlow Semi Condensed, Arial, Helvetica, sans-serif;
+    }
+
+    .textos {
+      display: block;
+      flex-direction: row;
+      word-break: break-word;
+      margin-top: 0;
+      font-family: Barlow Semi Condensed, Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      z-index: 3;
+    }
+
+    li {
+      list-style: none !important;
+    }
+
+    a {
+      color: black !important;
+    }
+
+    img:hover,
+    button:hover {
+      cursor: pointer;
+      cursor: hand;
+    }
+
+    .navbar {
+      background: #c00c00;
+    }
+
+    .gris {
+      background: #e9e7e7;
+    }
+
+    .mc {
+      width: 55px;
+      color: #c00c00;
+    }
+
+    .r:hover {
+      background: #77f077;
+    }
+
+    .sesion:hover,
+    .buscar:hover {
+      background: black !important;
+      color: white !important;
+      border: black !important;
+    }
+
+    .sesion,
+    .buscar {
+      color: #c00c00;
+    }
+
+    .idioma {
+      border: #03dd03 !important;
+    }
+
+    .list-seo-links.horizontal {
+      list-style-type: none;
+      padding: 0;
+      white-space: nowrap;
+    }
+
+    .list-seo-links.horizontal li {
+      display: inline;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+    .list-seo-links.horizontal li:not(:first-child)::before {
+      content: "/";
+    }
+
+    .list-seo-links.horizontal a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .breadcumb {
+      background-color: #fff;
+      color: #333;
+      overflow: hidden;
+    }
+
+    .list-seo-links.horizontal {
+      animation: marquee 25s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+        /* Comenzar desde la derecha */
+      }
+
+      100% {
+        transform: translateX(-100%);
+        /* Mover hacia la izquierda */
+      }
+    }
+    .card{
+    border: none !important;
+    border-radius: 0%;
+}
+  </style>
+
+</head>
+
+<body>
+  <!--Noticias-->
+  <div class="breadcumb">
+    <section>
+      <div class="container-fluid">
+        <ul class="list-seo-links horizontal">
+          <li><span>Es noticia: </span></li>
+          <li>
+            <a href="https://www.marca.com/mx/futbol/2023/09/07/64fa043146163fc42d8b4591.html">La Mañanera de AMLO</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/futbol/paraguay-peru/2023/09/08/01_0190_20230907_835_834-directo.html">Argentina
+              vs Ecuador</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/nfl/2023/09/07/64fa459846163fc42d8b45a9.html">Ganador de la encuesta
+              Morena</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/nfl/2023/09/05/64f793b3e2704e43a38b459a.html">NFL</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/trending/musica/2023/09/07/64fa28dbe2704e8e518b45a7.html">León Tiktok</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/motor/formula-1/2023/09/07/64fa2c1f46163ffc168b4575.html">Checo Pérez</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/beisbol/mx/2023/09/06/64f8f46b46163f47a68b45b0.html">Chivas vs America</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/actualidad/2023/09/07/64f92567268e3ec0068b45f5.html">Independencia de
+              México</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/tecnologia/2023/09/07/64fa3745268e3e8d168b45c3.html">León TikTok</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/actualidad/2023/09/08/64fa47f9268e3e606a8b457d.html">Independencia de
+              México</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/actualidad/2023/09/07/64fa0e0e268e3e36128b459a.html">Marcelo Ebrard</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/boxeo/2023/09/06/64f8e78e46163fdc098b45af.html">Canelo Álvarez</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/actualidad/2023/09/07/64f9e4b1e2704ef7b88b45e0.html">Pago Bienestar</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/actualidad/2023/09/04/64f530f222601df2208b459b.html">15 de septiembre</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/actualidad/2023/09/07/64f9f2c8e2704ef6418b45e3.html">La Mañanera AMLO</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/actualidad/2023/09/07/64fa01dfe2704e8e518b4583.html">Centenario</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/actualidad/2023/09/07/64f9e2ab46163f7a798b4598.html">Hoy No Circula</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/actualidad/2023/09/07/64f9d839e2704ea14a8b45fa.html">Precio del dólar
+              hoy</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/futbol/2023/09/07/64f9d88a46163f7a3c8b4599.html">Pago Bienestar</a>
+          </li>
+          <li>
+            <a href="https://www.marca.com/mx/actualidad/2023/09/07/64f9deefe2704ee8058b456e.html">Canelo Álvarez</a>
+          </li>
+        </ul>
+        <span class="gradient-right"></span><span class="gradient-left"></span>
+      </div>
+    </section>
+  </div>
+
+  <!--Header-->
+  <div class="row">
+    <div class="container-fluid">
+      <div class="row mx-auto">
+        <div class="row py-1 mx-auto col-xl-4 col-lg-4 col-md-5 col-sm-12">
+
+          <div class="mx-auto my-1 col-lg-6 col-md-12 col-sm-6 col-6">
+            <a class="d-flex justify-content-center" href="#">
+              <img src="img/radioMarca.PNG" alt="" width="35px">
+              <strong class="my-auto">Radio MARCA</strong>
+            </a>
+          </div>
+          <div class="mx-auto my-1 col-lg-6 col-md-12 col-sm-6 col-6">
+            <a class="d-flex justify-content-center" href="#">
+            <img src="img/CuidatePlus.png" alt="" width="35px">
+            <strong class="my-auto">CuídatePlus</strong>
+          </a>
+          </div>
+          
+          <div class="mx-auto my-1 col-lg-6 col-md-12 col-sm-6 col-6">
+            <a class="d-flex justify-content-center" href="#">
+              <img src="img/Lo+trending.png" alt="" width="35px">
+              <strong class="my-auto">Lo+trending</strong>
+            </a>
+          </div>
+          
+        </div>
+        
+
+        <div class="mx-auto my-auto p-0 col-md-3 col-7">
+          <div class="mx-auto col-lg-12 col-md-12 col-sm-12 my-1">
+            <img class="mx-auto d-flex justify-content-center" src="img/logo.PNG" alt="">
+          </div>
+        </div>
+
+        <div class="row mx-auto d-flex justify-content-center col-xl-4 col-lg-5 col-md-4 col-sm-12 col-12">
+          <div class="btn-group p-0 col-xl-4 col-lg-3 mx-1 col-md-12 col-sm-2 col-3">
+            <button data-toggle="dropdown"
+              class="border py-0 border-secondary rounded dropdown-toggle my-auto mx-auto bg-white">
+              <img class="" src="img/mexico.png" alt="" width="20px">
+              MX
+            </button>
+
+            <ul class="dropdown-menu" role="menu">
+              <li class="ml-2"><img class="" src="img/españa.png" alt="" width="20px">ES (España)</li>
+              <li class="ml-2"><img class="" src="img/mundo.png" alt="" width="20px">EN (English)</li>
+              <li class="ml-2"><img class="" src="img/mexico.png" alt="" width="20px">MX (Mexico)</li>
+              <li class="ml-2"><img class="" src="img/usa.jpg" alt="" width="20px">US (USA)</li>
+              <!-- Elegir idiomas (Esta parte no la tenia el otro código)-->
+              <li class="dropdown-item item-ul">
+                <label class="text-wrap mb-1 fw-bold">Escoge tu edición de Marca.com favorita</label>
+                <p class="text-wrap">
+                  Siempre que entres en Marca.com se cargará esta edición
+                </p>
+                <form>
+                  <div class="form-idiomas d-flex flex-column justify-content-center">
+                    <div class="idiomas d-flex justify-content-around">
+                      <div class="idiomas-items">
+                        <div>
+                          <input class="form-check-input" type="radio" name="Idioma" id="Idioma1">
+                          <label class="form-check-label">ES (España)</label>
+                        </div>
+                        <div>
+                          <input class="form-check-input" type="radio" checked name="Idioma" id="Idioma2">
+                          <label class="form-check-label">MX (México)</label>
+                        </div>
+                      </div>
+                      <div class="idiomas-items">
+                        <div>
+                          <input class="form-check-input" type="radio" checked name="Idioma" id="Idioma2">
+                          <label class="form-check-label">En (English)</label>
+                        </div>
+                        <div>
+                          <input class="form-check-input" type="radio" checked name="Idioma" id="Idioma2">
+                          <label class="form-check-label">US (USA)</label>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-danger fw-bold fs-5">Confirmar</button>
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="py-0 btn mx-1 my-2 border border-danger sesion my-auto col-xl-3 col-lg-4 col-md-12 col-sm-3 col-4 navbar justify-content-center text-white">
+            <strong>Suscríbete</strong>
+          </div>
+          <div
+            class="py-0 mx-2 btn my-2 border border-danger sesion my-auto col-xl-4 col-lg-5 col-md-12 col-sm-4 col-4">
+            <strong>Iniciar sesión</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--NAMBAR-->
+
+    <nav class="navbar navbar-expand-md navbar-light mt-1 text-white col-12">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto  ml-2 lead font-weight-normal">
+          <li class="nav-item active mx-2">
+            <div class="dropdown">
+              <a class="nav-link text-white dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Futbol</strong></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item active mx-2">
+            <div class="dropdown">
+              <a class="nav-link text-white dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Motor</strong></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item mx-2">
+          <li class="nav-item active mx-2">
+            <a class="nav-link disabled text-white" href="#"><strong>Boxeo</strong></a>
+          </li>
+          </li>
+          <li class="nav-item mx-2">
+          <li class="nav-item active mx-2">
+            <div class="dropdown">
+              <a class="nav-link text-white dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>NFL</strong></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+          </li>
+          <li class="nav-item mx-2">
+          <li class="nav-item active mx-2">
+            <div class="dropdown">
+              <a class="nav-link text-white dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Otros Deportes</strong></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+          </li>
+          <a class="nav-link disabled text-white" href="#"><strong>Más +</strong></a>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar en marca.com">
+          <button class="buscar btn my-2 mx-3" type="submit"><strong>Buscar</strong></button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-2 d-flex d-flex justify-content-center gris mx-auto my-auto">
+      <div class="navbar-expand-lg navbar-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent3"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent3">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a href="#"><img src="img/america.png" class="mx-3" alt="" width="30" height="30"
+                  title="Club América"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/atlas.png" class="mx-3" alt="" width="30" height="30"
+                  title="Atlas"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/atleticoSL.png" class="mx-3" alt="" width="30" height="30"
+                  title="Atlético San Luis"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/cruzAzul.png" class="mx-3" alt="" width="30" height="30"
+                  title="Cruz Azul"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/chivas.png" class="mx-3" alt="" width="30" height="30"
+                  title="Chivas"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/juarez.png" class="mx-3" alt="" width="30" height="30"
+                  title="Juárez"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/leon.png" class="mx-3" alt="" width="30" height="30"
+                  title="León"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/monarcasM.png" class="mx-3" alt="" width="30" height="30"
+                  title="Monarcas Morelia"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/monterrey.png" class="mx-3" alt="" width="30" height="30"
+                  title="Monterrey"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/necaxa.png" class="mx-3" alt="" width="30" height="30"
+                  title="Necaxa"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/pachuca.png" class="mx-3" alt="" width="30" height="30"
+                  title="Pachuca"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/puebla.png" class="mx-3" alt="" width="30" height="30"
+                  title="Puebla"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/pumas.png" class="mx-3" alt="" width="30" height="30"
+                  title="Pumas"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/queretaro.png" class="mx-3" alt="" width="30" height="30"
+                  title="Querétaro"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/santosL.png" class="mx-3" alt="" width="30" height="30"
+                  title="Santos Laguna"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/tigres.png" class="mx-3" alt="" width="30" height="30"
+                  title="Tigres"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/clubT.png" class="mx-3" alt="" width="30" height="30"
+                  title="Club Tijuana"></a></li>
+            <li class="nav-item"><a href="#"><img src="img/toluca.png" class="mx-3" alt="" width="30" height="30"
+                  title="Toluca"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Main-->
+
+  <div class="container">
+
+    <!--Anuncio-->
+    <div class="col-12 text-center padding=2% my-3">
+      <img width="90%" height="90%"
+        src="https://www.casasdeapuestas-mexico.com/wp-content/uploads/sites/11/2019/12/bono-caliente-3000-mxn-casasdeapuestas-mexico-banner1.png">
+    </div>
+
+    <!--Collage-->
+    <table class="table table-striped" style="width: 80%; margin: auto; background-color: #a7a5a3;">
+      <tbody>
+        <tr>
+          <td style="width: 10%; ">
+            <!-- Tabla1 -->
+            <div class="dropdown">
+              <p>Resultados:</p>
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Todos
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Fútbol</a>
+                <a class="dropdown-item" href="#">Clasificación Europa</a>
+                <a class="dropdown-item" href="#">Liga de Expansión MX</a>
+                <a class="dropdown-item" href="#">Primera Liga Portugal</a>
+                <a class="dropdown-item" href="#">Amistosos</a>
+                <a class="dropdown-item" href="#">Tenis</a>
+                <a class="dropdown-item" href="#">US Open Femenino</a>
+              </div>
+            </div>
+          </td>
+          <td style="width: 5%;">
+            <div class="vertical-center">
+              <a class="c" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+            </div>
+          </td>
+          <td style="width: 80%;">
+            <!-- Tabla2 -->
+            <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active center">
+
+                  <h4 style="color: blue; font-size: 24px;">Rumania 0 - 1 Macedonia</h4>
+                  <img src="flag_ro.png"> - <img src="flag_mk.png">
+
+                </div>
+                <div class="carousel-item center">
+
+                  <h4 style="color: red; font-size: 24px;">Kosovo 2 - 2 Darados</h4>
+                  <img src="flag_xk.png"> - <img src="flag_mx.png">
+
+                </div>
+                <div class="carousel-item center">
+
+                  <h4 style="color: green; font-size: 24px;">Otro resultado</h4>
+                  <img src="flag_xx.png"> - <img src="flag_yy.png">
+
+                </div>
+              </div>
+              <style>
+                /* Cambia el color de las flechas del carrusel */
+                .carousel-control-prev-icon,
+                .carousel-control-next-icon {
+                  background-color: #a9a8a8;
+
+                }
+              </style>
+
+            </div>
+          </td>
+          <td style="width: 5%;">
+            <a class=".carousel-control-next-icon" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <!--Noticias-->
+    <div class="row my-auto mx-auto">
+      
+      <!--Noticia Principal-->
+      <div class="card my-auto mx-auto border-0 col-md-7 col-12 p-0">
+        <img width="100%"
+          src="https://e00-mx-marca.uecdn.es/mx/assets/multimedia/imagenes/2023/09/10/16943222758470.jpg"
+          class="ue-c-cover-content__image" alt="Jaime Lozano: &quot;El equipo me gustó, nunca se vino abajo;">
+        <div>
+          <div>
+            <span class="titulos">Selección Nacional de México</span>
+          </div>
+          <header>
+            <h2 class="textos">Jaime Lozano: "El equipo me gustó, nunca se vino abajo"</h2>
+          </header>
+          <div>
+            <span>
+              ÁNGEL HÚGUEZ
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!--3 Noticias en lateral derecha-->
+      <div class="mx-auto col-md-5 col-12">
+        <div class="row mx-auto">
+          <div iv class="card flex-row col-12  border-0">
+            <div class="card-block px-2 border-bottom col-7">
+              <samp class="titulos">Selección Mexicana</samp>
+              <h5 class="textos">Chino Huerta y su estreno con Selección Mexicana: "Es un debut de ensueño</h5>
+              <span>ÁNGEL HÚGUEZ</span>
+            </div>
+            <div class="card-header border-bottom col-5">
+              <img width="139" height="79"
+                src="https://e00-mx-marca.uecdn.es/mx/assets/multimedia/imagenes/2023/09/10/16943189712377.jpg"
+                alt="Chino Huerta debuta con gol en Selección Mexicana y salva a Jaime Lozano">
+            </div>
+          </div>
+
+          <div iv class="card flex-row col-12  border-0">
+            <div class="card-block px-2 border-bottom col-7">
+              <samp class="titulos">Selección Mexicana</samp>
+              <h4 class="textos">México empata con Australia y los cambios salvan el resultado a Jaime Lozano</h4>
+              <span>LW</span>
+            </div>
+            <div class="card-header border-bottom col-5">
+              <img width="139" height="79"
+                src="https://e00-mx-marca.uecdn.es/mx/assets/multimedia/imagenes/2023/09/10/16943186847141.jpg"
+                alt="Chino Huerta debuta con gol en Selección Mexicana y salva a Jaime Lozano">
+            </div>
+          </div>
+
+          <div iv class="card flex-row col-12  border-0">
+            <div class="card-block px-2 border-bottom col-7">
+              <samp class="titulos">Selección Mexicana</samp>
+              <h4 class="textos">La racha no llega al Tri: Santi Giménez falla penal ante Australia</h4>
+              <span>ÁNGEL HÚGUEZ</span>
+            </div>
+            <div class="card-header border-bottom col-5">
+              <img width="139" height="79"
+                src="https://e00-mx-marca.uecdn.es/mx/assets/multimedia/imagenes/2023/09/10/16943173675173.jpg"
+                alt="Chino Huerta debuta con gol en Selección Mexicana y salva a Jaime Lozano">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--3 Noticias-->
+    <div class="row col-12">
+
+      <div class="card my-auto mx-auto border-0 col-md-4 p-3">
+        <img width="100%"
+          src="https://e00-mx-marca.uecdn.es/mx/assets/multimedia/imagenes/2023/09/10/16943222758470.jpg"
+          class="ue-c-cover-content__image" alt="Jaime Lozano: &quot;El equipo me gustó, nunca se vino abajo;">
+        <div>
+          <div>
+            <span class="titulos">Selección Nacional de México</span>
+          </div>
+          <header>
+            <h2 class="textos">Jaime Lozano: "El equipo me gustó, nunca se vino abajo"</h2>
+          </header>
+          <div>
+            <span>
+              ÁNGEL HÚGUEZ
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card my-auto mx-auto border-0 col-4 p-3">
+        <img width="100%"
+          src="https://phantom-marca-mx.unidadeditorial.es/fb43a03ced8817f021622dfa91fb7057/resize/286/f/webp/mx/assets/multimedia/imagenes/2023/09/13/16946381548130.jpg"
+          class="ue-c-cover-content__image" alt="Jaime Lozano: &quot;El equipo me gustó, nunca se vino abajo;">
+        <div>
+          <div>
+            <span class="titulos">Futbol</span>
+          </div>
+          <header>
+            <h2 class="textos">Hombre saca una pistola en pleno partido en Toluca</h2>
+          </header>
+          <div>
+            <span>
+              REDACCIÓN MARCA MÉXICO
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card my-auto mx-auto border-0 col-4 p-3">
+        <img width="100%"
+          src="https://phantom-marca-mx.unidadeditorial.es/821b1766b44ac3339816178617401856/resize/764/f/webp/mx/assets/multimedia/imagenes/2023/09/13/16946308605696.jpg"
+          class="ue-c-cover-content__image" alt="Jaime Lozano: &quot;El equipo me gustó, nunca se vino abajo;">
+        <div>
+          <div>
+            <span class="titulos">Selección Nacional de México</span>
+          </div>
+          <header>
+            <h2 class="textos">Juan Dinenno abre la puerta de Selección Mexicana"</h2>
+          </header>
+          <div>
+            <span>
+              ISRAEL M. ZÚÑIGA
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--Footer-->
+
+  <footer class="mx-0">
+    <div class="card rounded-0 text-center py-1">
+      <div class="container-about-footer">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 my-3">
+            <b>
+              &copy; Septiembre 2023<span>Unidad Editorial Información Deportiva, S.L.U. Todos los derechos
+                reservados</span>
+            </b>
+          </div>
+          <div class="col-5 col-sm-4 col-md-3">
+            <a class="d-flex justify-content-center" href="#">
+              <img src="img/cookies.png" class="mx-3" alt="" width="25" height="25">
+              <p>Política de cookies</p>
+            </a>
+          </div>
+          <div class="col-5 col-sm-4 col-md-2">
+            <a class="d-flex justify-content-center" href="#">
+              <p>Configuración de cookies</p>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a class="d-flex justify-content-center" href="#">
+              <img src="img/privacidad.png" class="mx-3" alt="" width="30" height="30">
+              <p>Política de privacidad</p>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a class="d-flex justify-content-center" href="#">
+              <p>Términos y condiciones de uso</p>
+            </a>
+          </div>
+          <div class="col-5 col-sm-4 col-md-3">
+            <a class="d-flex justify-content-center" href="#">
+              <p>Certificado po OJD</p>
+            </a>
+          </div>
+          <div class="col-5 col-sm-4 col-md-3">
+            <a class="d-flex justify-content-center" href="#">
+              <img src="img/contactos.png" class="mx-3" alt="" width="30" height="30">
+              <p>Contacto</p>
+            </a>
+          </div>
+          <div class="col-5 col-sm-4 col-md-3">
+            <a class="d-flex justify-content-center" href="#">
+              <img src="img/publicidad.png" class="mx-3" alt="" width="30" height="30">
+              <p>Publicidad</p>
+            </a>
+          </div>
+          <div class="col-5 col-sm-4 col-md-3">
+            <a class="d-flex justify-content-center" href="#">
+              <img src="img/ayuda.png" class="mx-3" alt="" width="20" height="20">
+              <p>Ayuda</p>
+            </a>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 my-3">
+            <b>Siguenos en:</b>
+          </div>
+          <div class=" mx-0">
+            <a class="d-flex justify-content-center" href="#">
+              <img src="img/facebook.png" class="mx-3" alt="" width="40" height="40">
+            </a>
+          </div>
+          <div class="mx-0">
+            <a class="d-flex justify-content-center" href="#">
+              <img src="img/twiter.png" class="mx-3" alt="" width="40" height="40">
+            </a>
+          </div>
+          <div class="mx-0 p-0">
+            <a class="d-flex justify-content-center" href="#">
+              <img src="img/captura.png" class="mx-3" alt="" width="45" height="45">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -16,128 +16,29 @@
   <title>MARCA Mexico - Diario online lider en informacion deportiva</title>
   <link rel="icon" sizes="32x32" href="https://www.marca.com/mx/favicon_32x32.png" />
 
-  <style>
-    .titulos {
-      color: #c00c00;
-      display: inline;
-      font-family: Barlow Semi Condensed, Arial, Helvetica, sans-serif;
-    }
+  <!--diseño-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 
-    .textos {
-      display: block;
-      flex-direction: row;
-      word-break: break-word;
-      margin-top: 0;
-      font-family: Barlow Semi Condensed, Arial, Helvetica, sans-serif;
-      font-weight: 600;
-      z-index: 3;
-    }
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 
-    li {
-      list-style: none !important;
-    }
+  <!--Bootstrap jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="./css/index.css" />
 
-    a {
-      color: black !important;
-    }
-
-    img:hover,
-    button:hover {
-      cursor: pointer;
-      cursor: hand;
-    }
-
-    .navbar {
-      background: #c00c00;
-    }
-
-    .gris {
-      background: #e9e7e7;
-    }
-
-    .mc {
-      width: 55px;
-      color: #c00c00;
-    }
-
-    .r:hover {
-      background: #77f077;
-    }
-
-    .sesion:hover,
-    .buscar:hover {
-      background: black !important;
-      color: white !important;
-      border: black !important;
-    }
-
-    .sesion,
-    .buscar {
-      color: #c00c00;
-    }
-
-    .idioma {
-      border: #03dd03 !important;
-    }
-
-    .list-seo-links.horizontal {
-      list-style-type: none;
-      padding: 0;
-      white-space: nowrap;
-    }
-
-    .list-seo-links.horizontal li {
-      display: inline;
-      margin-right: 5px;
-      margin-left: 5px;
-    }
-
-    .list-seo-links.horizontal li:not(:first-child)::before {
-      content: "/";
-    }
-
-    .list-seo-links.horizontal a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    .breadcumb {
-      background-color: #fff;
-      color: #333;
-      overflow: hidden;
-    }
-
-    .list-seo-links.horizontal {
-      animation: marquee 25s linear infinite;
-    }
-
-    @keyframes marquee {
-      0% {
-        transform: translateX(100%);
-        /* Comenzar desde la derecha */
-      }
-
-      100% {
-        transform: translateX(-100%);
-        /* Mover hacia la izquierda */
-      }
-    }
-    .card{
-    border: none !important;
-    border-radius: 0%;
-}
-  </style>
 
 </head>
 
 <body>
+
   <!--Noticias-->
-  <div class="breadcumb">
-    <section>
+  <header>
+    <div class="breadcumb">
       <div class="container-fluid">
         <ul class="list-seo-links horizontal">
-          <li><span>Es noticia: </span></li>
+          <li><b>Es noticia: </b></li>
           <li>
             <a href="https://www.marca.com/mx/futbol/2023/09/07/64fa043146163fc42d8b4591.html">La Mañanera de AMLO</a>
           </li>
@@ -206,37 +107,35 @@
         </ul>
         <span class="gradient-right"></span><span class="gradient-left"></span>
       </div>
-    </section>
-  </div>
+    </div>
+  </header>
 
   <!--Header-->
+
   <div class="row">
     <div class="container-fluid">
       <div class="row mx-auto">
-        <div class="row py-1 mx-auto col-xl-4 col-lg-4 col-md-5 col-sm-12">
-
-          <div class="mx-auto my-1 col-lg-6 col-md-12 col-sm-6 col-6">
-            <a class="d-flex justify-content-center" href="#">
+        <div class="row py-1 mx-auto col-md-5">
+          <div class="mx-auto my-1 col-md-4">
+            <a class="plus d-flex justify-content-center" href="#">
               <img src="img/radioMarca.PNG" alt="" width="35px">
               <strong class="my-auto">Radio MARCA</strong>
             </a>
           </div>
-          <div class="mx-auto my-1 col-lg-6 col-md-12 col-sm-6 col-6">
-            <a class="d-flex justify-content-center" href="#">
-            <img src="img/CuidatePlus.png" alt="" width="35px">
-            <strong class="my-auto">CuídatePlus</strong>
-          </a>
+          <div class="mx-auto my-1 col-md-4">
+            <a class="plus d-flex justify-content-center" href="#">
+              <img src="img/CuidatePlus.png" alt="" width="35px">
+              <strong class="my-auto">CuídatePlus</strong>
+            </a>
           </div>
-          
-          <div class="mx-auto my-1 col-lg-6 col-md-12 col-sm-6 col-6">
-            <a class="d-flex justify-content-center" href="#">
+          <div class="mx-auto my-1 col-md-4">
+            <a class="plus d-flex justify-content-center" href="#">
               <img src="img/Lo+trending.png" alt="" width="35px">
               <strong class="my-auto">Lo+trending</strong>
             </a>
           </div>
-          
         </div>
-        
+
 
         <div class="mx-auto my-auto p-0 col-md-3 col-7">
           <div class="mx-auto col-lg-12 col-md-12 col-sm-12 my-1">
@@ -253,10 +152,35 @@
             </button>
 
             <ul class="dropdown-menu" role="menu">
-              <li class="ml-2"><img class="" src="img/españa.png" alt="" width="20px">ES (España)</li>
-              <li class="ml-2"><img class="" src="img/mundo.png" alt="" width="20px">EN (English)</li>
-              <li class="ml-2"><img class="" src="img/mexico.png" alt="" width="20px">MX (Mexico)</li>
-              <li class="ml-2"><img class="" src="img/usa.jpg" alt="" width="20px">US (USA)</li>
+              <li class="dropdown-item item-ul fw-bold">
+                <b>
+                  Ediciones:
+                </b>
+              </li>
+              <li class="dropdown-item  ml-2">
+                <a href="#">
+                  <img class="" src="img/españa.png" alt="" width="20px">
+                  ES (España)
+                </a>
+              </li>
+              <li class="dropdown-item  ml-2">
+                <a>
+                  <img class="" src="img/mundo.png" alt="" width="20px">
+                  EN (English)
+                </a>
+              </li>
+              <li class="dropdown-item  ml-2">
+                <a>
+                  <img class="" src="img/mexico.png" alt="" width="20px">
+                  MX (Mexico)
+                </a>
+              </li>
+              <li class="dropdown-item  ml-2">
+                <a>
+                  <img class="" src="img/usa.jpg" alt="" width="20px">
+                  US (USA)
+                </a>
+              </li>
               <!-- Elegir idiomas (Esta parte no la tenia el otro código)-->
               <li class="dropdown-item item-ul">
                 <label class="text-wrap mb-1 fw-bold">Escoge tu edición de Marca.com favorita</label>
@@ -304,80 +228,351 @@
         </div>
       </div>
     </div>
+
     <!--NAMBAR-->
 
-    <nav class="navbar navbar-expand-md navbar-light mt-1 text-white col-12">
+    <nav class="navbar navbar-expand navbar-dark mt-1 text-white col-12">
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto  ml-2 lead font-weight-normal">
-          <li class="nav-item active mx-2">
-            <div class="dropdown">
-              <a class="nav-link text-white dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Futbol</strong></a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+      <div class="collapse navbar-collapse" id="main_nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="height: 4px !important">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!--Futbol-->
+            <li class="navbar-brand fw-bold nav-item dropdown">
+              <a class="nav-link text-white item-nav-red" href="#" role="button" data-bs-target="#menuDrop"
+                aria-expanded="false">
+                F&uacute;tbol
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu div-menu-navbar" id="menuDrop">
+                <div class="row ms-1">
+                  <div class="col col-12 col-md-3 col-sm-4 col-xs-12 header-column">
+                    <ul class="row">
+                      <li class="header-column-main">
+                        México
+                      </li>
+                      <li class="header-column-main-h1">
+                        Liga MX
+                      </li>
+                      <li class="header-column-main-content">
+                        <nav>
+                          <ol class="listas-1">
+                            <li><a href="#">Calendario - Apertura</a></li>
+                            <li><a href="#">Posiciones - Apertura</a></li>
+                            <li><a href="#">Calendario - Clausura</a></li>
+                            <li><a href="#">Posiciones - Clausura</a></li>
+                            <li><a href="#">Resultados</a></li>
+                          </ol>
+                        </nav>
+                      </li>
+                    </ul>
+                    <ul class="row">
+                      <li class="header-column-main-h1">
+                        Liga Expansi&oacute;n MX
+                      </li>
+                      <li class="header-column-main-content">
+                        <nav>
+                          <ol class="listas-1">
+                            <li><a href="#">Calendario - Apertura</a></li>
+                            <li><a href="#">Posiciones - Apertura</a></li>
+                            <li><a href="#">Calendario - Clausura</a></li>
+                            <li><a href="#">Posiciones - Clausura</a></li>
+                            <li><a href="#">Resultados</a></li>
+                          </ol>
+                        </nav>
+                      </li>
+                      <li class="header-column-main-h1">
+                        Concachampions
+                      </li>
+                      <li class="header-column-main-h1">
+                        Mexicanos por el mundo
+                      </li>
+                      <li class="header-column-main-h1">
+                        F&uacute;tbol femenil
+                      </li>
+                      <li class="header-column-main-h1">
+                        Selecci&oacute;n Mexicana
+                      </li>
+                      <li class="header-column-main-h1">
+                        F&uacute;tbol de Estufa
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col col-12 col-md-3 col-sm-4 col-xs-12 header-column">
+                    <ul class="row">
+                      <li class="header-column-main">
+                        Am&eacute;rica
+                      </li>
+                      <li class="header-column-main-h1">
+                        MLS
+                      </li>
+                      <li class="header-column-main-content">
+                        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                          <ol class="breadcrumb listas-1">
+                            <li class="breadcrumb-item"><a href="#">Calendario</a></li>
+                            <li class="breadcrumb-item"><a href="#">Posiciones</a></li>
+                            <li class="breadcrumb-item"><a href="#">Resultados</a></li>
+                          </ol>
+                        </nav>
+                      </li>
+                    </ul>
+                    <ul class="row">
+                      <li class="header-column-main-h1">
+                        Conmebol Libertadores
+                      </li>
+                      <li class="header-column-main-content">
+                        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                          <ol class="breadcrumb listas-1">
+                            <li class="breadcrumb-item"><a href="#">Calendario</a></li>
+                            <li class="breadcrumb-item"><a href="#">Posiciones</a></li>
+                          </ol>
+                        </nav>
+                      </li>
+                      <li class="header-column-main-h1">
+                        Concacaf Nations League
+                      </li>
+                      <li class="header-column-main-h1">
+                        Leagues Cup
+                      </li>
+                      <li class="header-column-main-content">
+                        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                          <ol class="breadcrumb listas-1">
+                            <li class="breadcrumb-item"><a href="#">Calendario</a></li>
+                            <li class="breadcrumb-item"><a href="#">Posiciones</a></li>
+                          </ol>
+                        </nav>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col col-12 col-md-3 col-sm-4 col-xs-12 header-column">
+                    <ul class="row">
+                      <li class="header-column-main">
+                        Europa
+                      </li>
+                      <li class="header-column-main-h1">
+                        LaLiga EA Sports
+                      </li>
+                      <li class="header-column-main-content">
+                        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                          <ol class="breadcrumb listas-1">
+                            <li class="breadcrumb-item"><a href="#">Calendario</a></li>
+                            <li class="breadcrumb-item"><a href="#">Posiciones</a></li>
+                            <li class="breadcrumb-item"><a href="#">Resultados</a></li>
+                            <li class="breadcrumb-item"><a href="#">Barcelona</a></li>
+                            <li class="breadcrumb-item"><a href="#">Real Madrid</a></li>
+                          </ol>
+                        </nav>
+                      </li>
+                      <li class="header-column-main-h1">
+                        Premier League
+                      </li>
+                      <li class="header-column-main-content">
+                        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                          <ol class="breadcrumb listas-1">
+                            <li class="breadcrumb-item"><a href="#">Calendario</a></li>
+                            <li class="breadcrumb-item"><a href="#">Posiciones</a></li>
+                            <li class="breadcrumb-item"><a href="#">Resultados</a></li>
+                          </ol>
+                        </nav>
+                      </li>
+                      <li class="header-column-main-h1">
+                        Ligue 1
+                      </li>
+                      <li class="header-column-main-content">
+                        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                          <ol class="breadcrumb listas-1">
+                            <li class="breadcrumb-item"><a href="#">Calendario</a></li>
+                            <li class="breadcrumb-item"><a href="#">Posiciones</a></li>
+                            <li class="breadcrumb-item"><a href="#">Resultados</a></li>
+                          </ol>
+                        </nav>
+                      </li>
+                      <li class="header-column-main-h1">
+                        Serie A
+                      </li>
+                      <li class="header-column-main-h1">
+                        Bundesliga
+                      </li>
+                      <li class="header-column-main-h1">
+                        Champions League
+                      </li>
+                      <li class="header-column-main-content">
+                        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                          <ol class="breadcrumb listas-1">
+                            <li class="breadcrumb-item"><a href="#">Calendario</a></li>
+                            <li class="breadcrumb-item"><a href="#">Posiciones</a></li>
+                            <li class="breadcrumb-item"><a href="#">Resultados</a></li>
+                          </ol>
+                        </nav>
+                      </li>
+                      <li class="header-column-main-h1">
+                        Europa League
+                      </li>
+                      <li class="header-column-main-content">
+                        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                          <ol class="breadcrumb listas-1">
+                            <li class="breadcrumb-item"><a href="#">Calendario</a></li>
+                            <li class="breadcrumb-item"><a href="#">Posiciones</a></li>
+                            <li class="breadcrumb-item"><a href="#">Resultados</a></li>
+                          </ol>
+                        </nav>
+                      </li>
+                      <li class="header-column-main-h1">
+                        UEFA Nations League
+                      </li>
+                      <li class="header-column-main-h1">
+                        Euro 2024
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col col-12 col-md-3 col-sm-4 col-xs-12 header-column">
+                    <ul class="row">
+                      <li class="header-column-main">
+                        Y adem&aacute;s
+                      </li>
+                      <li class="header-column-main-h1">
+                        Bal&oacute;n de Oro
+                      </li>
+                      <li class="header-column-main-h1">
+                        Copa Oro
+                      </li>
+                      <li class="header-column-main-h1">
+                        Copa Am&eacute;rica
+                      </li>
+                      <li class="header-column-main-h1">
+                        Mundial de Clubes
+                      </li>
+                      <li class="header-column-main-h1">
+                        Mundial 2022
+                      </li>
+                      <li class="header-column-main-h1">
+                        Mundial femenil 2023
+                      </li>
+                      <li class="header-column-main-h1">
+                        M&aacute;s f&uacute;tbol
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="nav-item active mx-2">
-            <div class="dropdown">
-              <a class="nav-link text-white dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Motor</strong></a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+            <!--motor-->
+            <li class="navbar-brand fw-bold nav-item dropdown">
+              <a class="nav-link text-white" href="#" role="button" data-bs-target="#motorDropdown"
+                aria-expanded="false">
+                Motor
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-start div-menu-navbar" id="motorDropdown">
+                <div class="row" style="margin-left: 1px;">
+                  <ul class="col col-12 col-md-3 col-sm-4 col-xs-12 header-column">
+                    <li class="header-column-main">
+                      México
+                    </li>
+                    <li class="header-column-main-h1">
+                      Liga MX
+                    </li>
+                    <li class="header-column-main-content">
+                      <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                        <ol class="breadcrumb listas-1">
+                          <li class="breadcrumb-item"><a href="#">Calendario - Apertura</a></li>
+                          <li class="breadcrumb-item"><a href="#">Posiciones - Apertura</a></li>
+                          <li class="breadcrumb-item"><a href="#">Calendario - Clausura</a></li>
+                          <li class="breadcrumb-item"><a href="#">Posiciones - Clausura</a></li>
+                          <li class="breadcrumb-item"><a href="#">Resultados</a></li>
+                        </ol>
+                      </nav>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-
-          <li class="nav-item mx-2">
-          <li class="nav-item active mx-2">
-            <a class="nav-link disabled text-white" href="#"><strong>Boxeo</strong></a>
-          </li>
-          </li>
-          <li class="nav-item mx-2">
-          <li class="nav-item active mx-2">
-            <div class="dropdown">
-              <a class="nav-link text-white dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>NFL</strong></a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+            <!--boxeo-->
+            <li class="navbar-brand fw-bold nav-item">
+              <a class="nav-link text-white" href="#">Boxeo</a>
+            </li>
+            <!--NFL-->
+            <li class="navbar-brand fw-bold nav-item dropdown">
+              <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                NFL
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-start div-menu-navbar" id="motorDropdown">
+                <div class="row">
+                  <ul class="col col-12 col-md-3 col-sm-4 col-xs-12 header-column ms-1">
+                    <li class="header-column-main-h1">
+                      NFL
+                    </li>
+                    <li class="header-column-main-content">
+                      <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                        <ol class="breadcrumb listas-1">
+                          <li class="breadcrumb-item"><a
+                              href="https://www.marca.com/mx/nfl/calendario.html?intcmp=MENUPROD&amp;s_kw=mx-nfl-calendario">Calendario</a>
+                          </li>
+                          <li class="breadcrumb-item"><a
+                              href="https://www.marca.com/mx/nfl/posiciones-divisiones.html?intcmp=MENUPROD&amp;s_kw=mx-nfl-posiciones">Posiciones</a>
+                          </li>
+                          <li class="breadcrumb-item"><a
+                              href="https://www.marca.com/mx/nfl/resultados.html?intcmp=MENUMIGA&amp;s_kw=mx-nfl-resultados">Resultados</a>
+                          </li>
+                          <li class="breadcrumb-item"><a
+                              href="https://www.marca.com/mx/nfl/superbowl.html?intcmp=MENUMIGA&amp;s_kw=mx-nfl-superbowl">Superbowl</a>
+                          </li>
+                        </ol>
+                      </nav>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-          </li>
-          <li class="nav-item mx-2">
-          <li class="nav-item active mx-2">
-            <div class="dropdown">
-              <a class="nav-link text-white dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Otros Deportes</strong></a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+            <!--otros-->
+            <li class="navbar-brand fw-bold nav-item dropdown">
+              <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Otros Deportes
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-start div-menu-navbar" id="motorDropdown">
+                <div class="row">
+                  <ul class="col col-12 col-md-3 col-sm-4 col-xs-12 header-column ms-1">
+                    <li class="header-column-main-h1">
+                      Otros deportes
+                    </li>
+                    <li class="header-column-main-content">
+                      <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                        <ol class="breadcrumb listas-1">
+                          <li class="breadcrumb-item"><a
+                              href="https://www.marca.com/mx/nfl/calendario.html?intcmp=MENUPROD&amp;s_kw=mx-nfl-calendario">Calendario</a>
+                          </li>
+                          <li class="breadcrumb-item"><a
+                              href="https://www.marca.com/mx/nfl/posiciones-divisiones.html?intcmp=MENUPROD&amp;s_kw=mx-nfl-posiciones">Posiciones</a>
+                          </li>
+                          <li class="breadcrumb-item"><a
+                              href="https://www.marca.com/mx/nfl/resultados.html?intcmp=MENUMIGA&amp;s_kw=mx-nfl-resultados">Resultados</a>
+                          </li>
+                          <li class="breadcrumb-item"><a
+                              href="https://www.marca.com/mx/nfl/superbowl.html?intcmp=MENUMIGA&amp;s_kw=mx-nfl-superbowl">Superbowl</a>
+                          </li>
+                        </ol>
+                      </nav>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-          </li>
-          <a class="nav-link disabled text-white" href="#"><strong>Más +</strong></a>
-
-        </ul>
+            </li>
+          </ul>
+        </div>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Buscar en marca.com">
-          <button class="buscar btn my-2 mx-3" type="submit"><strong>Buscar</strong></button>
+          <button class="buscar btn my-2 mx-3" type="submit"><strong> Buscar </strong></button>
         </form>
       </div>
     </nav>
+
+
 
     <div class="container-fluid p-2 d-flex d-flex justify-content-center gris mx-auto my-auto">
       <div class="navbar-expand-lg navbar-light">
@@ -437,89 +632,340 @@
 
     <!--Anuncio-->
     <div class="col-12 text-center padding=2% my-3">
-      <img width="90%" height="90%"
-        src="https://www.casasdeapuestas-mexico.com/wp-content/uploads/sites/11/2019/12/bono-caliente-3000-mxn-casasdeapuestas-mexico-banner1.png">
+      <a class="my-auto mx-auto col-lg-8 col-md-12" href="https://www.caliente.mx/" target="_blank">
+        <img width="100%" height="100%"
+          src="https://cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/WWLF2EXWJBGKBDEOZPXRRMB2OM.jpg">
+      </a>
     </div>
 
+
+
     <!--Collage-->
-    <table class="table table-striped" style="width: 80%; margin: auto; background-color: #a7a5a3;">
-      <tbody>
-        <tr>
-          <td style="width: 10%; ">
-            <!-- Tabla1 -->
-            <div class="dropdown">
-              <p>Resultados:</p>
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Todos
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Fútbol</a>
-                <a class="dropdown-item" href="#">Clasificación Europa</a>
-                <a class="dropdown-item" href="#">Liga de Expansión MX</a>
-                <a class="dropdown-item" href="#">Primera Liga Portugal</a>
-                <a class="dropdown-item" href="#">Amistosos</a>
-                <a class="dropdown-item" href="#">Tenis</a>
-                <a class="dropdown-item" href="#">US Open Femenino</a>
+    <section class="banner">
+      <div class="row bg-body-secondary">
+
+        <div class="col-md-2 col-sm-2 col-xs-2 my-auto">
+          <div class="row m-1 text-center">
+            <small class="fw-bold">Resultados</small>
+          </div>
+          <div class="row m-1 justify-content-center text-center">
+            <select name="todosRes" id="todosResult" class="form-select">
+              <option value="todos">Todos</option>
+              <option value="todos">PARTIDOS DE CLASIFICACION MX</option>
+              <option value="todos">LIGA DE EXPANSION MX</option>
+              <option value="todos">COPA DE ORO MX</option>
+              <option value="todos">COPA DE LA LIGA PROFESIONAL DE ARGENTINA</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-10 col-sm-10 col-xs-10 bg-body-secondary">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <div id="carouselExample" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner ">
+
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6 col-md-6 mt-1">
+                    <div class="text-center">
+                      <img src="img/mexico.png" height="30px" alt="COPA DE LA LIGA PROFESIONAL DE ARGENTINA">
+                      <p class="fw-bold" style="font-size: smaller">PARTIDOS DE CLASIFICACION MX</p>
+                    </div>
+                    <div class="row">
+
+                      <div class="col">
+                        <div class="card card-resultado mb-2" style="background-color: #f7f7f7;">
+                          <div class="card-body m-1">
+                            <div class="row">
+                              <label class="equipoCarrusel text-center m-1"
+                                style="font-size: smaller;"><b>15:00</b></label>
+                              <div class="col-6">
+
+                                <p class="equipoCarrusel">
+                                  <img class="ue-c-scoreboard-dual__team-badge" src="img/atlas.png">
+                                  Atlas
+                                  <br>
+                                  <img class="ue-c-scoreboard-dual__team-badge" src="img/leon.png">
+                                  leon
+                                </p>
+
+                              </div>
+                              <div class="col-4 text-end">
+                                <span class="badge bg-secondary">-</span>
+                                <br>
+                                <span class="badge bg-secondary">-</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card card-resultado mb-2" style="background-color: #f7f7f7;">
+                          <div class="card-body m-1">
+                            <div class="row">
+                              <label class="equipoCarrusel text-center m-1">20:00</label>
+                              <div class="col-8">
+
+                                <p class="equipoCarrusel">
+                                  <img class="ue-c-scoreboard-dual__team-badge" src="img/america.png">America
+                                  <br>
+                                  <img class="ue-c-scoreboard-dual__team-badge" src="img/atlas.png">Atlas
+                                </p>
+
+                              </div>
+                              <div class="col-4 text-end">
+                                <span class="e badge bg-secondary">-</span>
+                                <br>
+                                <span class="badge bg-secondary">-</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </td>
-          <td style="width: 5%;">
-            <div class="vertical-center">
-              <a class="c" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-              </a>
-            </div>
-          </td>
-          <td style="width: 80%;">
-            <!-- Tabla2 -->
-            <div id="carouselExampleControls" class="carousel slide" data-interval="false">
-              <div class="carousel-inner">
-                <div class="carousel-item active center">
 
-                  <h4 style="color: blue; font-size: 24px;">Rumania 0 - 1 Macedonia</h4>
-                  <img src="flag_ro.png"> - <img src="flag_mk.png">
+              <div class="carousel-item ">
+                <div class="row">
+                  <div class="col-3 col-md-3 mt-1">
+                    <div class="text-center">
+                      <img
+                        src="https://1.bp.blogspot.com/-8F4Q3jRIIF8/Xz9AhWln58I/AAAAAAAARps/buxTw4QQ3-8BIvwdlVMvAt7BVQ4VdAJdgCLcBGAsYHQ/s1600/Liga%2BBBVA%2BExpansi%25C3%25B3n%2BMX.png"
+                        height="30px" alt="LIGA DE EXPANSION MX">
+                      <p class="fw-bold" style="font-size: smaller">LIGA DE EXPANSION MX</p>
+                    </div>
+                    <div class="card card-resultado mb-2" style="background-color: #f7f7f7;">
+                      <div class="card-body m-1">
+                        <div class="row">
+                          <label class="equipoCarrusel text-center m-1">19:05</label>
+                          <div class="col-6">
 
-                </div>
-                <div class="carousel-item center">
+                            <p class="equipoCarrusel">
+                              <img class="ue-c-scoreboard-dual__team-badge"
+                                src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/7580.png"
+                                srcset="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/7580.png, https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/7580.png 1.5x"
+                                alt="Universidad de Guadalajara">
+                              Universidad de Guadalajara
+                              <span class="badge bg-secondary">-</span>
+                              <br>
+                              <img class="ue-c-scoreboard-dual__team-badge"
+                                src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/7581.png"
+                                srcset="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/7581.png, https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/7581.png 1.5x"
+                                alt="Dorados">
+                              Dorados
+                            </p>
 
-                  <h4 style="color: red; font-size: 24px;">Kosovo 2 - 2 Darados</h4>
-                  <img src="flag_xk.png"> - <img src="flag_mx.png">
-
-                </div>
-                <div class="carousel-item center">
-
-                  <h4 style="color: green; font-size: 24px;">Otro resultado</h4>
-                  <img src="flag_xx.png"> - <img src="flag_yy.png">
-
+                          </div>
+                          <div class="col-4 text-end">
+                            <span class="e badge bg-secondary">-</span>
+                            <br>
+                            <span class="badge bg-secondary">-</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <style>
-                /* Cambia el color de las flechas del carrusel */
-                .carousel-control-prev-icon,
-                .carousel-control-next-icon {
-                  background-color: #a9a8a8;
 
-                }
-              </style>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6 col-md-6 mt-1">
+                    <div class="text-center">
+                      <img src="img/mexico.png" height="30px" alt="COPA DE LA LIGA PROFESIONAL DE ARGENTINA">
+                      <p class="fw-bold" style="font-size: smaller">COPA DE ORO MX</p>
+                    </div>
+                    <div class="row">
+
+                      <div class="col">
+                        <div class="card card-resultado mb-2" style="background-color: #f7f7f7;">
+                          <div class="card-body m-1">
+                            <div class="row">
+                              <label class="equipoCarrusel text-center m-1"
+                                style="font-size: smaller;"><b>18:00</b></label>
+                              <div class="col-8">
+
+                                <p class="equipoCarrusel">
+                                  <img class="ue-c-scoreboard-dual__team-badge" src="img/chivas.png">
+                                  Chivas
+                                  <br>
+                                  <img class="ue-c-scoreboard-dual__team-badge" src="img/america.png">
+                                  America
+                                </p>
+
+                              </div>
+                              <div class="col-4 text-end">
+                                <span class="badge bg-secondary">-</span>
+                                <br>
+                                <span class="badge bg-secondary">-</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card card-resultado mb-2" style="background-color: #f7f7f7;">
+                          <div class="card-body m-1">
+                            <div class="row">
+                              <label class="equipoCarrusel text-center m-1">20:00</label>
+                              <div class="col-8">
+                                <p class="equipoCarrusel">
+                                  <img class="ue-c-scoreboard-dual__team-badge" src="img/america.png">America
+                                  <br>
+                                  <img class="ue-c-scoreboard-dual__team-badge" src="img/atlas.png">Atlas
+                                </p>
+                              </div>
+                              <div class="col-4 text-end">
+                                <span class="e badge bg-secondary">-</span>
+                                <br>
+                                <span class="badge bg-secondary">-</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row ">
+                  <div class="col-9 col-md-9 mt-1">
+                    <div class="text-center">
+                      <img
+                        src="https://1.bp.blogspot.com/-s-PWMumERn8/XsRRBilg2eI/AAAAAAABa8I/pQT1CnbA-sgfOvQvhxAeGx2n8RW3y3HLgCK4BGAsYHg/d/LPF.png"
+                        height="30px" alt="COPA DE LA LIGA PROFESIONAL DE ARGENTINA">
+                      <p class="fw-bold" style="font-size: smaller">COPA DE LA LIGA PROFESIONAL DE ARGENTINA</p>
+                    </div>
+                    <div class="row">
+
+                      <div class="col">
+                        <div class="card card-resultado mb-2" style="background-color: #f7f7f7;">
+                          <div class="card-body m-1">
+                            <div class="row">
+                              <label class="equipoCarrusel text-center m-1"
+                                style="font-size: smaller;"><b>FIN</b></label>
+                              <div class="col-8">
+
+                                <p class="equipoCarrusel">
+                                  <img class="ue-c-scoreboard-dual__team-badge"
+                                    src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/3579.png"
+                                    srcset="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/3579.png, https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/3579.png 1.5x"
+                                    alt="Platense">
+                                  Platense
+                                  <br>
+                                  <img class="ue-c-scoreboard-dual__team-badge"
+                                    src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/2473.png"
+                                    srcset="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/2473.png, https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2473.png 1.5x"
+                                    alt="Lanús">
+                                  Lan&uacute;s
+                                </p>
+
+                              </div>
+                              <div class="col-4 text-end">
+                                <span class="badge bg-secondary">2</span>
+                                <br>
+                                <span class="badge bg-secondary">1</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card card-resultado mb-2" style="background-color: #f7f7f7;">
+                          <div class="card-body m-1">
+                            <div class="row">
+                              <label class="equipoCarrusel text-center m-1">18:00</label>
+                              <div class="col-8">
+
+                                <p class="equipoCarrusel">
+                                  <img class="ue-c-scoreboard-dual__team-badge"
+                                    src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/1243.png"
+                                    srcset="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/1243.png, https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/1243.png 1.5x"
+                                    alt="Independiente">
+                                  Independiente
+                                  <br>
+                                  <img class="ue-c-scoreboard-dual__team-badge"
+                                    src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/2473.png"
+                                    srcset="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/2473.png, https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2473.png 1.5x"
+                                    alt="Huracán">
+                                  Hurac&aacute;n
+                                </p>
+
+                              </div>
+                              <div class="col-4 text-end">
+                                <span class="e badge bg-secondary">-</span>
+                                <br>
+                                <span class="badge bg-secondary">-</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card card-resultado mb-2" style="background-color: #f7f7f7;">
+                          <div class="card-body m-1">
+                            <div class="row">
+                              <label class="equipoCarrusel text-center m-1">18:00</label>
+                              <div class="col-8">
+
+                                <p class="equipoCarrusel">
+                                  <img class="ue-c-scoreboard-dual__team-badge"
+                                    src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/1243.png"
+                                    srcset="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/1243.png, https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/1243.png 1.5x"
+                                    alt="Independiente">
+                                  Independiente
+                                  <br>
+                                  <img class="ue-c-scoreboard-dual__team-badge"
+                                    src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/2473.png"
+                                    srcset="https://e00-marca.uecdn.es/assets/sports/logos/football/png/36x36/2473.png, https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2473.png 1.5x"
+                                    alt="Huracán">
+                                  Hurac&aacute;n
+                                </p>
+
+                              </div>
+                              <div class="col-4 text-end">
+                                <span class="e badge bg-secondary">-</span>
+                                <br>
+                                <span class="badge bg-secondary">-</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             </div>
-          </td>
-          <td style="width: 5%;">
-            <a class=".carousel-control-next-icon" href="#carouselExampleControls" role="button" data-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Siguiente</span>
-            </a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
 
 
     <!--Noticias-->
     <div class="row my-auto mx-auto">
-      
+
       <!--Noticia Principal-->
       <div class="card my-auto mx-auto border-0 col-md-7 col-12 p-0">
         <img width="100%"
@@ -543,6 +989,7 @@
       <!--3 Noticias en lateral derecha-->
       <div class="mx-auto col-md-5 col-12">
         <div class="row mx-auto">
+
           <div iv class="card flex-row col-12  border-0">
             <div class="card-block px-2 border-bottom col-7">
               <samp class="titulos">Selección Mexicana</samp>
@@ -585,30 +1032,32 @@
       </div>
     </div>
 
+    <hr>
+
 
     <!--3 Noticias-->
     <div class="row col-12">
 
-      <div class="card my-auto mx-auto border-0 col-md-4 p-3">
+      <div class="card cardMove my-auto mx-auto border-0 col-md-4 col-12 p-3">
         <img width="100%"
-          src="https://e00-mx-marca.uecdn.es/mx/assets/multimedia/imagenes/2023/09/10/16943222758470.jpg"
+          src="https://phantom-marca-mx.unidadeditorial.es/1b9eae593c2cdfe12416e60d9c94d104/resize/382/f/webp/mx/assets/multimedia/imagenes/2023/09/14/16947209243274.jpg"
           class="ue-c-cover-content__image" alt="Jaime Lozano: &quot;El equipo me gustó, nunca se vino abajo;">
         <div>
           <div>
-            <span class="titulos">Selección Nacional de México</span>
+            <span class="titulos">ACTUALIDAD</span>
           </div>
           <header>
-            <h2 class="textos">Jaime Lozano: "El equipo me gustó, nunca se vino abajo"</h2>
+            <h2 class="textos">Muere mujer en caída de elevador en Gran Sur</h2>
           </header>
           <div>
             <span>
-              ÁNGEL HÚGUEZ
+              LW
             </span>
           </div>
         </div>
       </div>
 
-      <div class="card my-auto mx-auto border-0 col-4 p-3">
+      <div class="card my-auto mx-auto border-0 col-md-4 col-12 p-3">
         <img width="100%"
           src="https://phantom-marca-mx.unidadeditorial.es/fb43a03ced8817f021622dfa91fb7057/resize/286/f/webp/mx/assets/multimedia/imagenes/2023/09/13/16946381548130.jpg"
           class="ue-c-cover-content__image" alt="Jaime Lozano: &quot;El equipo me gustó, nunca se vino abajo;">
@@ -627,7 +1076,7 @@
         </div>
       </div>
 
-      <div class="card my-auto mx-auto border-0 col-4 p-3">
+      <div class="card my-auto mx-auto border-0 col-md-4 col-12 p-3">
         <img width="100%"
           src="https://phantom-marca-mx.unidadeditorial.es/821b1766b44ac3339816178617401856/resize/764/f/webp/mx/assets/multimedia/imagenes/2023/09/13/16946308605696.jpg"
           class="ue-c-cover-content__image" alt="Jaime Lozano: &quot;El equipo me gustó, nunca se vino abajo;">
@@ -648,12 +1097,126 @@
 
     </div>
 
+    <!--3 noticias-->
+    <div class="row col-12">
+
+      <div class="card my-auto mx-auto border-0 col-md-4 col-12 p-3">
+        <img width="100%"
+          src="https://phantom-marca-mx.unidadeditorial.es/dc409bbac9f2f5d3f4abf5def9224582/resize/382/f/webp/mx/assets/multimedia/imagenes/2023/09/14/16947269800134.jpg"
+          class="ue-c-cover-content__image" alt="Jaime Lozano: &quot;El equipo me gustó, nunca se vino abajo;">
+        <div>
+          <div>
+            <span class="titulos">Celebrities</span>
+          </div>
+          <header>
+            <h2 class="textos">¿Quién es Curvy Zelma? Fotos antes y después</h2>
+          </header>
+          <div>
+            <span>
+              LW
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card my-auto mx-auto border-0 col-md-4 col-12 p-3">
+        <img width="100%"
+          src="https://phantom-marca-mx.unidadeditorial.es/21d606936792a7cc54443ca7058249d8/resize/256/f/webp/mx/assets/multimedia/imagenes/2023/09/14/16947209985333.jpg"
+          class="ue-c-cover-content__image" alt="Jaime Lozano: &quot;El equipo me gustó, nunca se vino abajo;">
+        <div>
+          <div>
+            <span class="titulos">Futbol</span>
+          </div>
+          <header>
+            <h2 class="textos">La NASA informa de la existencia de OVNIS</h2>
+          </header>
+          <div>
+            <span>
+              LW
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card my-auto mx-auto border-0 col-md-4 col-12 p-3">
+        <img width="100%"
+          src="https://phantom-marca-mx.unidadeditorial.es/2019e7e82cfedb846ed593d247167329/resize/143/f/webp/mx/assets/multimedia/imagenes/2023/09/13/16946147226091.jpg"
+          class="ue-c-cover-content__image" alt="Jaime Lozano: &quot;El equipo me gustó, nunca se vino abajo;">
+        <div>
+          <div>
+            <span class="titulos">GP Singapur F1 2023</span>
+          </div>
+          <header>
+            <h2 class="textos">Carlos Sainz: Pondría a Verstappen saliendo el último</h2>
+          </header>
+          <div>
+            <span>
+              JAIME MARTÍN
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!--1 noticia grande y 2 chicas-->
+    <div class="row my-auto mx-auto">
+
+      <!--Noticia grande-->
+      <div class="card my-auto mx-auto border-0 col-md-7 col-12 p-0">
+        <img width="100%"
+          src="https://phantom-marca-mx.unidadeditorial.es/506261615078a45c9e8de0f9b3e089d7/resize/232/f/webp/mx/assets/multimedia/imagenes/2023/09/15/16947357546363.jpg"
+          class="ue-c-cover-content__image" alt="Jaime Lozano: &quot;El equipo me gustó, nunca se vino abajo;">
+        <div>
+          <div>
+            <span class="titulos">Fútbol Femenil</span>
+          </div>
+          <header>
+            <h2 class="textos">¿Quién es Deyaris Arai Pérez? La ex jugadora de la Liga MX Femenil que ahora es modelo
+            </h2>
+          </header>
+          <div>
+            <span>
+              LW
+            </span>
+          </div>
+        </div>
+        <img width="100%"
+          src="https://phantom-marca-mx.unidadeditorial.es/56f0a2c8b4054f5a1ab5c01cd5bfa31c/resize/232/f/webp/mx/assets/multimedia/imagenes/2023/09/14/16947256896218.jpg"
+          class="ue-c-cover-content__image" alt="Jaime Lozano: &quot;El equipo me gustó, nunca se vino abajo;">
+        <div>
+          <div>
+            <span class="titulos">Celebrities</span>
+          </div>
+          <header>
+            <h2 class="textos">Christian Nodal y Cazzu anuncian nacimiento de su primer bebé con esta foto</h2>
+          </header>
+          <div>
+            <span>
+              LW
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!--anuncio-->
+      <div class="mx-auto col-md-5 col-12">
+        <div class="row mx-auto">
+          <div class="col-12 text-center">
+            <a class="my-auto mx-auto col-lg-8 col-md-12" href="https://www.caliente.mx/" target="_blank">
+              <img width="100%" height="120%"
+                src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltcb18b529025bcfc8/62ff5d0b555d9946980043bb/132h80lh2a5xq1ia9vrgr4utj9.jpg?auto=webp&format=pjpg&width=3840&quality=60">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!--Footer-->
-
   <footer class="mx-0">
-    <div class="card rounded-0 text-center py-1">
+    <div class="card rounded-0 text-center py-1" style="background-color: #e9e7e7;">
       <div class="container-about-footer">
         <div class="row d-flex justify-content-center">
           <div class="col-12 my-3">
@@ -712,19 +1275,11 @@
           <div class="col-12 my-3">
             <b>Siguenos en:</b>
           </div>
-          <div class=" mx-0">
+          <div class="mx-0 col-12">
             <a class="d-flex justify-content-center" href="#">
               <img src="img/facebook.png" class="mx-3" alt="" width="40" height="40">
-            </a>
-          </div>
-          <div class="mx-0">
-            <a class="d-flex justify-content-center" href="#">
               <img src="img/twiter.png" class="mx-3" alt="" width="40" height="40">
-            </a>
-          </div>
-          <div class="mx-0 p-0">
-            <a class="d-flex justify-content-center" href="#">
-              <img src="img/captura.png" class="mx-3" alt="" width="45" height="45">
+              <img src="img/capture.png" class="mx-3" alt="" width="40" height="40">
             </a>
           </div>
         </div>
@@ -733,16 +1288,20 @@
   </footer>
 
 
+
   <!-- Optional JavaScript -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

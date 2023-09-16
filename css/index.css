@@ -227,4 +227,8 @@ header .breadcumb {
 	.div-menu-navbar {
 		width: 100% !important;
 	}
+
+	footer{
+		font-size: 12px;
+	}
 }

@@ -165,6 +165,7 @@ nav{
 	border: #03dd03 !important;
 }
 
+
 .list-seo-links.horizontal {
 	list-style-type: none;
 	padding: 0;
@@ -193,7 +194,7 @@ header .breadcumb {
 }
 
 .list-seo-links.horizontal {
-	animation: marquee 25s linear infinite;
+	animation: marquee 20s linear infinite;
 }
 
 @keyframes marquee {
@@ -207,7 +208,12 @@ header .breadcumb {
 		/* Mover a la izquierda */
 	}
 }
-
+.breadcrumb-item + .breadcrumb-item::before {
+	float: left;
+	padding-right: var(--bs-breadcrumb-item-padding-x);
+	color: rgb(255 255 255 / 75%);
+	content: var(--bs-breadcrumb-divider, "/");
+}
 .cardMove {
 	border: none !important;
 	border-radius: 0%;

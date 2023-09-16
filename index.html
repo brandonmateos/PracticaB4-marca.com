@@ -233,14 +233,11 @@
 
     <nav class="navbar navbar-expand navbar-dark mt-1 text-white col-12">
 
-      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
-        data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="row col-1"></div>
 
-      <div class="collapse navbar-collapse" id="main_nav">
+      <div class="collapse navbar-collapse col-11 " id="main_nav">
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="height: 4px !important">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="text-white navbar-nav me-auto mb-2 mb-lg-0">
             <!--Futbol-->
             <li class="navbar-brand fw-bold nav-item dropdown">
               <a class="nav-link text-white item-nav-red" href="#" role="button" data-bs-target="#menuDrop"
@@ -260,7 +257,7 @@
                       </li>
                       <li class="header-column-main-content">
                         <nav>
-                          <ol class="listas-1">
+                          <ol class="listas-1 ">
                             <li><a href="#">Calendario - Apertura</a></li>
                             <li><a href="#">Posiciones - Apertura</a></li>
                             <li><a href="#">Calendario - Clausura</a></li>
@@ -563,12 +560,35 @@
                 </div>
               </div>
             </li>
+            <!--actuaalidad-->
+            <li class="navbar-brand fw-bold nav-item dropdown"  style="background-color: rgb(155, 16, 16);">
+              <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Actualidad
+                <i class="bi bi-chevron-down"></i>
+              </a>
+            </li>
+            <!--Ultimas Noticias-->
+            <li class="navbar-brand fw-bold nav-item dropdown"  style="background-color: rgb(155, 16, 16);">
+              <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ultimas Noticias
+                <i class="bi bi-chevron-down"></i>
+              </a>
+            </li>
+            <!--Mas-->
+            <li class="navbar-brand fw-bold nav-item dropdown">
+              <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mas+
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              
+            </li>
+
           </ul>
+
         </div>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Buscar en marca.com">
-          <button class="buscar btn my-2 mx-3" type="submit"><strong> Buscar </strong></button>
-        </form>
+        </ul>
+
+        
       </div>
     </nav>
 

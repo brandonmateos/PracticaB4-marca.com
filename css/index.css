@@ -98,6 +98,11 @@ button:hover {
 
 .navbar {
 	background: #c00c00;
+
+}
+
+nav{
+	height: 57px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
@@ -130,92 +135,6 @@ button:hover {
 	}
 }
 
-/* 
-.dropdown-menu .submenu{ 
-	display: none;
-	position: absolute;
-	left:100%; top:-8px;
-}
-
-.dropdown-menu .submenu-left{ 
-	right:100%; left:2%;
-}
-
-.dropdown-menu > li:hover{ background-color: #1B242C }
-.dropdown-menu > li:hover > .submenu{
-	display: block;
-}
-
-.dropdown-menu > .dropdown-item.item-ul:hover{
-    background-color:transparent; 
-}
-
-.btn-group ul.dropdown-menu li.dropdown-item.item-ul form .ediciones-items{
-    display: flex;
-    flex-direction: column; 
-}
-
-
-header .botones .btn-group ul.dropdown-menu li label{
-    margin-top: 6px;
-    font-size: 14px;
-}
-
-.botones .btn-group .check-radio .form-chek .form-chek-input:active{
-    background-color: transparent;
-}
-
-header .navbar .nav-link.dropdown-toggle::after{
-    content: none;
-}
-
-header .navbar .nav-item .nav-link.show {
-    color: #1B242C;
-}
-
-header .navbar .dropdown-menu[data-bs-popper] {
-    top: 100%;
-    left: 0;
-    margin-top: 0.05rem;
-}
-
-header .navbar .dropdown-menu{
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border:transparent;
-    background-color: #1B242C !important;
-}
-
-header .navbar .dropdown-menu li a{
-    color: #ffffff;
-}
-
-header .navbar .dropdown-menu li a:hover{
-    background-color: #1B242C !important;
-}
-
-header nav.navbar ul.navbar-nav li a.nav-link{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    color: #ffffff;
-    font-size: 20px;
-}
-
-header nav.navbar .grupo-nav li:last-child {
-    padding-right: 5px;
-}
-
-header nav.navbar .grupo-nav a{
-    font-size: 14px !important;
-    font-weight: 400 !important;
-}
-
-header nav.navbar .grupo-nav a:hover{
-    text-decoration: underline;
-    color: #1B242C !important;
-}
-
- */
 
 .gris {
 	background: #e9e7e7;

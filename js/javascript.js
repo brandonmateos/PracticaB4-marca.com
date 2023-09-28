@@ -1,1 +1,0 @@
-$('.dropdown-toggle').dropdownHover(options);0

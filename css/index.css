@@ -87,7 +87,11 @@ li {
 }
 
 a {
-	color: rgb(157, 156, 156) !important;
+	color: rgb(197, 193, 193) !important;
+}
+
+.a-colorBlack {
+	color: rgb(0, 0, 0) !important;
 }
 
 img:hover,
@@ -121,7 +125,7 @@ nav{
 }
 
 .div-menu-navbar {
-	background: rgba(20, 29, 37, 0.97) !important;
+	background: rgba(33, 32, 32, 0.97) !important;
 	color: white !important;
 	margin-top: -0.16em !important;
 	left: 0 !important;
@@ -139,6 +143,8 @@ nav{
 .gris {
 	background: #e9e7e7;
 }
+
+
 
 .mc {
 	width: 55px;
@@ -189,8 +195,10 @@ nav{
 }
 
 header .breadcumb {
-	background-color: #f6f6f6;
-	color: #333;
+	background-color: #ffffff;
+	color: #000000;
+	padding-top: 0.5em;
+	margin-top: auto;
 }
 
 .list-seo-links.horizontal {
@@ -207,6 +215,9 @@ header .breadcumb {
 		transform: translateX(-100%);
 		/* Mover a la izquierda */
 	}
+}
+.breadcumb {
+	overflow: hidden;
 }
 .breadcrumb-item + .breadcrumb-item::before {
 	float: left;
